@@ -1,0 +1,6 @@
+##akka-spikes##
+
+akka-spikes is a catch all repository for all the little experiments I do to support my work. I expect to add additional modules here if I need or want to explore a typical akka topic in-depth. Topics will include things like Clustering, Sharding, Persistence, Routing, etc. And, the first spike is...
+
+###http-client###
+http-client explores how to create an Actor http client with Akka Http. I found the [Akka Http documentation](http://doc.akka.io/docs/akka-http/current/scala/http/client-side/request-level.html) to be inspiring, yet incomplete. I took Alex Kuang's blog post, [Writing an API Client with Akka-http](http://alexkuang.com/blog/2016/04/26/writing-an-api-client-with-akka-http/) as a solid start in getting a straight forward http client going, with some minor changes, as I wanted a stateless client. Then I took the online documentations's approach to the Actor approach and hybridized it with Alex's code to create the Actor http client. I considered the approach a success, and have applied it to the Orchestrator module in my [ecommerce project](https://github.com/lukewyman/ecommerce).
